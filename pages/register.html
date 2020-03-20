@@ -1,3 +1,16 @@
+<?php
+  if(isset($_SESSION["errorMessage"])) {
+?>
+    <div style="padding: 7px 10px;
+    background: #fff1f2;
+    border: #ffd5da 1px solid;
+    color: #d6001c;
+    border-radius: 4px;
+    margin: 30px 10px 10px 10px;"><?php echo $_SESSION["errorMessage"]; ?></div>
+<?php
+    unset($_SESSION["errorMessage"]);
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
